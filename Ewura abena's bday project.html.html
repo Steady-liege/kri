@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Birthday</title>
+    </head>
+    <link rel="stylesheet" href="ewura abena.css">
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .tabs { display: flex; margin-bottom: 10px; }
+        .tab {
+          padding: 10px 20px;
+          cursor: pointer;
+          background: #eee;
+          margin-right: 5px;
+          border-radius: 5px 5px 0 0;
+        }
+        .tab.active { background: #dcdcdc; font-weight: bold; }
+        .tab-content {
+          display: none;
+          padding: 15px;
+          border: 1px solid #ccc;
+          border-top: none;
+          background: #f9f9f9;
+          border-radius: 0 0 5px 5px;
+        }
+        .tab-content.active { display: block; }
+      </style>
+    </head>
+   
+          <link rel="icon" href="favicon.jpg" type="image/png" />
+    <body>
+      <h4>University Student forms</h4>
+        <form action="">
+            <label for="name">Surname:</label>
+            <br>
+            <input type="text" name="lastname" id="lastname">
+            <br><br>
+            <label for="name">Firstname:</label>
+            <br>
+            <input type="text" name="Firstname" id="Firstname">
+            <br><br>
+            <label for="Date">Date Of Birth:</label>
+            <br>
+            <input type="date" name="dateofbirth" id="dateofbirth">
+            <br><br>
+          
+        <h2><u>Happy birthday Dr Nketiah  &#129395;</u></h2>
+        <h1>Yie yieeee she cometh!!</h1>
+        <header>
+            <h1>🎉 Birthday Event Tabs 🎉</h1>
+          
+            <div class="tabs">
+              <div class="tab active" onclick="openTab('details')">Details</div>
+              <div class="tab" onclick="openTab('gifts')">Gifts</div>
+              <div class="tab" onclick="openTab('gallery')">Gallery</div>
+            </div>
+          
+            <div id="details" class="tab-content active">
+              <h2>🎂 Party Details</h2>
+              <p>Date: May 24th, 2025</p>
+              <p>Time: Till you drop</p>
+              <p>Place: Diamond Jubilee room B310</p>
+            </div>
+          
+            <div id="gifts" class="tab-content">
+              <h2>🎁 Gift Ideas</h2>
+              <ul>
+                <li>Dan Brown: White Knight </li>
+                <li>Handmade Card</li>
+                <li>Favorite Snacks Basket</li>
+              </ul>
+            </div>
+          
+            <div id="gallery" class="tab-content">
+              <h2>📸 Photo Gallery</h2>
+              <p>Coming soon!...SIKEEE!!!</p>
+              <img src="test.jpg" height="200" width="200">
+            </div>
+
+          
+            <script>
+              function openTab(tabId) {
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.getElementById(tabId).classList.add('active');
+                event.target.classList.add('active');
+              }
+            </script>
+            <a href="Kri Kri.html"> <button>Next up</button></a>
+         
+
+
+
+    </body>
+</html>
+
+
+
